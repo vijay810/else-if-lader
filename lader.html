@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Else if lader</title>
+</head>
+<body>
+    <script>
+        function relation(){
+            if(document.getElementById("t1").value==document.getElementById("t2").value)
+            {
+                document.getElementById("res").innerHTML="Both are Equal";
+            }
+            else if(document.getElementById("t1").value>document.getElementById("t2").value)
+            {
+                document.getElementById("res").innerHTML="First number is greater than second number";
+            }
+            else
+            {
+                document.getElementById("res").innerHTML="first number is smaller than second number";
+            }
+        }
+    </script>
+    <h1>Enter first number: <input type="text" id="t1"></h1><br><br>
+    <h1>Enter second number: <input type="text" id="t2"></h1><br><br>
+    <!-- <button type="button" onclick="relation()">Relative two number</button><br><br> -->
+    <button type="button" onclick="relation()">Relative Two number</button><br><br>
+    <div id="res"></div>
+</body>   
+</html>
